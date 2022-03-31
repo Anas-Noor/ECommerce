@@ -1,0 +1,16 @@
+<p>add-category works!</p>
+<p style="text-align: center;">varient works!</p>
+<form [formGroup]="categoryData" (ngSubmit)="saveCat()" class="needs-validation">
+    <div class="form">
+        <div class="form-group">
+            <label for="validationCustom01" class="mb-1">Category Name</label>
+            <input formControlName="name" class="form-control" id="validationCustom01" type="text">
+        </div>
+        <div class="form-group">
+            <label for="validationCustom01" class="mb-1">Category thumbnail</label>
+            <input formControlName="thumbnail" class="form-control" id="validationCustom01" type="text">
+        </div>
+        <button type="submit"
+        class="btn btn-primary btn-block">Submit</button>
+    </div>
+</form>

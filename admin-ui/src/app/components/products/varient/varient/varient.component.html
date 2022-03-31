@@ -1,0 +1,11 @@
+<p style="text-align: center;">varient works!</p>
+<form [formGroup]="varientData" (ngSubmit)="saveVarient()" class="needs-validation">
+    <div class="form">
+        <div class="form-group">
+            <label for="validationCustom01" class="mb-1">Varient Name</label>
+            <input formControlName="varientName" class="form-control" id="validationCustom01" type="text">
+        </div>
+        <button type="submit"
+        class="btn btn-primary btn-block">Submit</button>
+    </div>
+</form>

@@ -1,0 +1,16 @@
+<table class="table table-bordered">
+    <thead>
+        
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Varient Name</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of varients">
+        <td>{{i.id}}</td>
+        <td>{{i.varientName}}</td>
+        <td><i class="fa fa-trash" style="color: red;" (click)="deleteVarient(i.id)" aria-hidden="true"></i><i (click)="updateVarient(i.id)" style="color: green;" class="fa fa-pencil" aria-hidden="true"></i></td>
+      </tr>
+  </table>
